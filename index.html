@@ -1,129 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon page -->
+    <link rel="shortcut icon" href="./img/bg/logo1.svg" type="image/x-icon" />
 
-  <!-- API de scroll -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- API de scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!-- Files externos -->
-  <script src="scriptlist.js" defer></script>
-  <script src="script.js" defer></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="./img/bg/logo1.svg" type="image/x-icon">
+    <!-- Files scripts externos -->
+    <script src="scriptlist.js" defer></script>
+    <script src="script.js" defer></script>
 
-  <!-- Title of page -->
-  <title>Portifólio</title>
-</head>
+    <!-- Files styles externos -->
+    <link rel="stylesheet" href="desktop.css" />
+    <link rel="stylesheet" href="mobile.css" />
 
-<body>
+    <!-- Title of page -->
+    <title>Portifólio</title>
+  </head>
 
-  <!-- Cabeçalho -->
-  <header id="header">
-    <a id="logo" href="#sobre"></a>
-    <nav id="nav">
-      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-        <span id="hamburger"></span>
-      </button>
-      <ul id="menu" role="menu">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#techs">Tecnologias</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <!-- Cabeçalho -->
+    <header id="header">
+      <a id="logo" href="#sobre"></a>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#techs">Tecnologias</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Conteúdo -->
-  <main>
+    <!-- Conteúdo -->
+    <main>
+      <!-- Botão whatsapp -->
+      <span>
+        <a
+          target="_blank"
+          id="btn4"
+          href="https://api.whatsapp.com/send?phone=5593992022675&text=Olá,estou%20interessado(a):em%20saber%20mais%20em%20seus%20SERVIÇOS%20!!"
+        ></a>
+      </span>
 
-    <!-- Botão whatsapp -->
-    <span>
-      <a id='btn4'
-        href="https://api.whatsapp.com/send?phone=5593992022675&text=Olá,estou%20interessado(a):em%20saber%20mais%20em%20seus%20SERVIÇOS%20!!"></a>
-    </span>
+      <section class="container" id="sobre">
+        <article id="sobreImg">
+          <img class="svg" src="./img/bg/logo1.svg" alt="" />
+        </article>
+        <section class="digitando scroll" id="sobreText">
+          <h3>Olá, eu sou</h3>
 
-    <section class="container" id="sobre">
-      <article id="sobreImg">
-        <img class='svg' src="./img/bg/logo1.svg" alt="">
-      </article>
-      <section class='digitando scroll' id='sobreText'>
-        <h3>Olá, eu sou</h3>
+          <h1>
+            Rhoglas
+            <span class="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
+          </h1>
 
-        <h1>Rhoglas <span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+          <h3>Desenvolvedor Front - end</h3>
 
-        <h3>Desenvolvedor Front - end</h3>
-
-        <a class='buttom' href="#contato">Contato</a>
+          <a class="buttom" href="#contato">Contato</a>
+        </section>
       </section>
-    </section>
 
-    <section class="container" id='techs'>
-      <section class='techText scroll'>
-        <h1>Tecnologias que eu utilizo</h1>
+      <section class="container" id="techs">
+        <section class="scroll" id="techText">
+          <h1>Tecnologias que eu utilizo</h1>
 
-        <p>Dentre as tecnolonias mais usadas para o desenvolvimento web, estas são as que eu tenho utilizado na produção
-          de todos os meus projetos e que estão sendo aprimoradas cada vez mais a cada projeto que eu desenvolvo e as
-          utilizo.</p>
-      </section>
-      <section class='tech'>
-        <!-- <div class='card' id='card1'>
+          <p>
+            Dentre as tecnolonias mais usadas para o desenvolvimento web, estas
+            são as que eu tenho utilizado na produção de todos os meus projetos
+            e que estão sendo aprimoradas cada vez mais a cada projeto que eu
+            desenvolvo e as utilizo.
+          </p>
+        </section>
+        <section class="tech" id="techCard">
+          <!-- 
+        <div class='card' id='card1'>
           <img src="./img/icons/html.png" alt="">
-          <section>
-            <span class='descText'>HTML é uma linguagem de marcação de hiper texto utilizada na construção de páginas e
-              documentos
-              Web.</span>
-            <progress id='progress1' max="100" value="90"></progress>
-            <span class='porcentagem'>90%</span>
-          </section>
         </div> -->
+        </section>
       </section>
-    </section>
 
-    <section class="container" id="projetos">
-      <div class="projetosWeb">
-        <!-- <section>
+      <section class="container" id="projetos">
+        <div class="projetosWeb" id="projImg">
+          <!-- <a>
           <img src="./img/projt/projeto1.png" alt="">
           <span>Burguer Delivery</span>
-        </section> -->
-      </div>
-      <div id="descricao" class='scroll'>
-        <h1>
-          Meus projetos WEB
-        </h1>
+        </a> -->
+        </div>
+        <div id="descricao" class="scroll">
+          <h1>
+            Meus projetos WEB
+          </h1>
 
-        <P>Disponibilizo alguns de meus projetos para maior compreenção da versatilidade do desenvolvimento web em meio
-          ao ramo da programação na produção de sistemas complexos e bastante utilizados!</P>
-      </div>
-    </section>
-
-    <section class="container" id="contato">
-      <section class="rodape scroll">
-        <h1>Formas de entrar em contato!</h1>
-        <p> Em destaque agora estão os links para entrar em contato diretamente comigo por meio das redes sociais de
-          trabalho!</p>
-      </section>
-      <section class="rodape">
-        <div id="wrapLinks">
-          <ul class="links">
-            <li>
-              <a id='btn1' href="https://www.linkedin.com/in/rhoglas-lobato-arag%C3%A3o-29946922a">Linkedin</a>
-            </li>
-            <li>
-              <a id='btn2' href="https://github.com/RhoglasLobato">GitHub</a>
-            </li>
-            <li>
-              <a id='btn4'
-                href="https://api.whatsapp.com/send?phone=5593992022675&text=Olá,estou%20interessado(a):em%20saber%20mais%20em%20seus%20SERVIÇOS%20!!">Whatsapp</a>
-            </li>
-          </ul>
+          <p>
+            Disponibilizo alguns de meus projetos para maior compreenção da
+            versatilidade do desenvolvimento web em meio ao ramo da programação
+            na produção de sistemas complexos e bastante utilizados!
+          </p>
         </div>
       </section>
-    </section>
-  </main>
-</body>
 
+      <section class="container" id="contato">
+        <section class="scroll" id="contText">
+          <h1>Formas de entrar em contato!</h1>
+          <p>
+            Em destaque agora estão os links para entrar em contato diretamente
+            comigo por meio das redes sociais de trabalho!
+          </p>
+        </section>
+        <section id="contLink">
+          <div id="wrapLinks">
+            <ul class="links">
+              <li>
+                <a
+                  target="_blank"
+                  id="btn1"
+                  href="https://www.linkedin.com/in/rhoglas-lobato-29946922a/"
+                >
+                  Linkedin
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  id="btn2"
+                  href="https://github.com/RhoglasLobato"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  id="btn4"
+                  href="https://api.whatsapp.com/send?phone=5593992022675&text=Olá,estou%20interessado(a):em%20saber%20mais%20em%20seus%20SERVIÇOS%20!!"
+                >
+                  Whatsapp
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>

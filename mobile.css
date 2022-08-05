@@ -1,0 +1,110 @@
+/* ::::::::::::::::::: Versão mobile ::::::::::::::::::: */
+
+@media (max-width: 1000px) {
+  * {
+    scrollbar-width: none;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    color: var(--cor-font-1);
+    border-top: 0.2rem solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    color: var(--cor-font-1);
+
+    display: block;
+    width: 20px;
+    height: 0.2rem;
+    background: currentColor;
+    margin-top: 0.24rem;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 3.5rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu {
+    background: var(--cor-transparent-black);
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+    margin: 0;
+
+    gap: 2rem;
+    top: 3.5rem;
+    right: 0;
+
+    z-index: 999;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #menu {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  #menu > li > a {
+    font-size: 2rem;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+  }
+  .container {
+    flex-flow: column;
+
+    height: auto;
+    padding: 4rem 0;
+  }
+  #sobreImg,
+  #sobreText,
+  #techText,
+  #techCard,
+  #projImg,
+  #descricao,
+  #contText,
+  #contLink {
+    width: 90%;
+  }
+  .svg {
+    max-width: 15rem;
+    height: 15rem;
+  }
+  #sobreImg,
+  .card {
+    height: 40vh;
+  }
+  #techs {
+    margin: 4rem 0;
+  }
+  #projetos {
+    flex-flow: column-reverse;
+  }
+}
+
+/* ::::::::::::::::::: Versão mobile ::::::::::::::::::: */
