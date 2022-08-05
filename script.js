@@ -1,5 +1,5 @@
-window.sr = ScrollReveal({ reset: true });
-sr.reveal(".scroll", { duration: 2000 });
+// window.sr = ScrollReveal({ reset: true });
+// sr.reveal(".scroll", { duration: 2000 });
 
 // teste
 const typedTextSpan = document.querySelector(".typed-text");
@@ -61,33 +61,17 @@ techs.forEach((t) => {
 	// criando tags
 	let techDiv = document.createElement("div");
 	let techImg = document.createElement("img");
-	let techSec = document.createElement("section");
-	let techSpan1 = document.createElement("span");
-	let techProgr = document.createElement("progress");
-	let techSpan2 = document.createElement("span");
 
 	// criando classes
 	techDiv.classList.add("card");
-	techSpan1.classList.add("descText");
-	techProgr.classList.add("progress");
-	techSpan2.classList.add("porcentagem");
-
 	// Add conteudo
 	techDiv.style.cssText = `background-image: url(${t.bg}) ;`;
 	techImg.src = t.img;
-	techSpan1.innerHTML = t.txt;
-	techProgr.max = t.progMax;
-	techProgr.value = t.progValue;
-	techSpan2.innerHTML = t.porc;
 
 	// Add noo dom
 
 	tech.appendChild(techDiv);
 	techDiv.appendChild(techImg);
-	techDiv.appendChild(techSec);
-	techSec.appendChild(techSpan1);
-	techSec.appendChild(techProgr);
-	techSec.appendChild(techSpan2);
 });
 
 // criando cards de tecnologiais
@@ -106,6 +90,7 @@ projetos.forEach((p) => {
 	let projTxt = document.createElement("span");
 
 	projLink.href = p.link;
+	projLink.classList.add("contLink");
 	// projLink.style.cssText = `background-image: url(${p.img})`;
 	projImg.src = p.img;
 	projTxt.innerHTML = p.txt;
