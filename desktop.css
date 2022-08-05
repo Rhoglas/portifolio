@@ -204,6 +204,7 @@ main > span > a::before {
 /* ::::::::::::::::::: Section SOBRE ::::::::::::::::::: */
 #sobre {
   background-image: url(./img/bg/bg4.svg);
+  height: 100vh;
 }
 .svg {
   width: 100%;
