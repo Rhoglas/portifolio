@@ -15,15 +15,15 @@
   scroll-behavior: smooth;
 }
 :root {
-  --cor-font-1: #ffaa00;
+  --cor-font-1: #f8df00;
   --cor-font-2: #000000;
-  --cor-font-3: #b62ada;
+  --cor-font-3: #a6a6a6;
   --cor-font-4: #ffffff;
 
   --cor-transparent-white: #ffffff3b;
   --cor-transparent-black: #0000004f;
 }
-body {
+/* body {
   background-color: #ffaa00;
   background: radial-gradient(
       circle,
@@ -45,8 +45,13 @@ body {
     linear-gradient(#000000 2px, transparent 2px) 0 -1px,
     linear-gradient(90deg, #000000 2px, #ffaa00 2px) -1px 0;
   background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+} */
+
+body {
+  background: linear-gradient(to right, #ffaa00, #000000);
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
   display: none;
 }
 h1 {
@@ -64,10 +69,16 @@ h3 {
   color: var(--cor-font-4);
   text-shadow: 2px 2px 3px var(--cor-font-2);
 }
+h3:nth-child(1) {
+  color: var(--cor-font-1);
+}
 p {
+  text-align: center;
   text-shadow: 1px 1px 1px var(--cor-font-2);
-  margin: 0.5rem 0 0.5rem 0;
   font-weight: 700;
+
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0 0 1.5rem 0;
   /* color: var(--cor-font-2); */
 }
 /* ::::::::::::::::::: Formatação geral ::::::::::::::::::: */
@@ -93,7 +104,6 @@ p {
   display: flex;
 
   border-radius: 0.5rem;
-  color: var(--cor-font-5);
   justify-content: center;
   align-items: center;
 
@@ -114,20 +124,7 @@ p {
   width: 2.5rem;
   height: 3rem;
 }
-#menu {
-  display: flex;
-  gap: 0.5rem;
-  margin-right: 0.5rem;
-}
-#menu li a {
-  background-color: var(--cor-font-1);
-  color: var(--cor-font-2);
 
-  border: 2px solid var(--cor-font-4);
-  border-radius: 0.3rem;
-  padding: 0.3rem;
-  font-weight: 600;
-}
 /* ::::::::::::::::::: Bar Menu ::::::::::::::::::: */
 
 /* ::::::::::::::::::: Botão Whatsapp ::::::::::::::::::: */
@@ -170,6 +167,9 @@ main > span > a::before {
 
   z-index: 990;
 }
+#contato {
+  height: 100vh;
+}
 #sobreImg,
 #sobreText,
 #techText,
@@ -190,23 +190,28 @@ main > span > a::before {
 #techText,
 #descricao,
 #contText {
-  background: linear-gradient(to right, #ffaa00, #000000);
+  background-color: var(--cor-transparent-white);
+  color: var(--cor-font-4);
 
-  padding: 0.5rem;
-  border-radius: 50px;
-  /* background: #e0e0e0; */
-  box-shadow: 5px 5px 10px #796969, -5px -5px 10px #000000;
-  border-radius: 0.5rem;
+  border: 2px solid var(--cor-font-4);
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  font-weight: 600;
 }
 
 /* ::::::::::::::::::: Formatando containers ::::::::::::::::::: */
 
 /* ::::::::::::::::::: Section SOBRE ::::::::::::::::::: */
 #sobre {
-  background-image: url(./img/bg/bg4.svg);
+  /* background-image: url(./img/bg/bg4.svg); */
+  min-height: 100vh;
   height: 100vh;
 }
+
 .svg {
+  -webkit-filter: drop-shadow(var(--cor-font-3) 14px 7px 1.9px);
+  filter: drop-shadow(var(--cor-transparent-white) 8px 3px 1px);
+
   width: 100%;
   max-width: 25rem;
   height: auto;
@@ -319,9 +324,11 @@ main > span > a::before {
     animation-timing-function: ease-out;
   }
 }
-
 #sobreText > h1 {
-  background: linear-gradient(to right, #000000, #ffaa00);
+  /* background: linear-gradient(to right, #000000, #ffaa00); */
+
+  background-color: var(--cor-transparent-black);
+  border: 0.2rem solid var(--cor-transparent-white);
 
   text-align: center;
   padding: 1rem 0;
@@ -336,7 +343,8 @@ main > span > a::before {
   overflow: hidden;
 }
 .digitando > h1 > span.typed-text {
-  font-weight: normal;
+  color: var(--cor-font-1);
+  /* font-weight: normal; */
 }
 .digitando > h1 > span.cursor {
   display: inline-block;
@@ -374,6 +382,7 @@ main > span > a::before {
   gap: 1.5rem;
 }
 .card {
+  background-size: cover;
   border: 0.2rem solid var(--cor-font-4);
   border-radius: 0.5rem;
   max-width: 10rem;
@@ -438,7 +447,7 @@ main > span > a::before {
 
   gap: 0.5rem;
 }
-
+#menu li a,
 .buttom,
 .links > li > a {
   background-color: var(--cor-font-4);
@@ -457,9 +466,10 @@ main > span > a::before {
 
   gap: 0.5rem;
 }
+#menu li a:hover,
 .buttom:hover,
 .links > li > a:hover {
-  background-color: var(--cor-transparent-black);
+  background-color: var(--cor-transparent-white);
   color: var(--cor-font-4);
 }
 .links > li > a::before {
@@ -482,4 +492,12 @@ main > span > a::before {
 }
 .links > li > #btn4::before {
   background-image: url(./img/icons/whatsapp.png);
+}
+#menu li a {
+  margin: 0;
+}
+#menu {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 0.5rem;
 }

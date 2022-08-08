@@ -14,14 +14,14 @@
     gap: 0.5rem;
   }
   #hamburger {
-    color: var(--cor-font-1);
+    color: var(--cor-font-4);
     border-top: 0.2rem solid;
     width: 20px;
   }
   #hamburger::after,
   #hamburger::before {
     content: '';
-    color: var(--cor-font-1);
+    color: var(--cor-font-4);
 
     display: block;
     width: 20px;
@@ -50,7 +50,7 @@
     background: var(--cor-transparent-black);
     position: absolute;
 
-    width: 100%;
+    width: 60%;
     height: 0;
     margin: 0;
 
@@ -71,7 +71,7 @@
     flex-flow: column;
   }
   #menu > li > a {
-    font-size: 2rem;
+    font-size: 1.4rem;
     border-radius: 0.3rem;
     padding: 0.3rem;
   }
