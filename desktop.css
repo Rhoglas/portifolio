@@ -88,7 +88,7 @@ p {
   display: none;
 }
 #header {
-  background-color: var(--cor-transparent-white);
+  background-color: var(--cor-transparent-black);
 
   display: flex;
   position: fixed;
@@ -190,7 +190,7 @@ main > span > a::before {
 #techText,
 #descricao,
 #contText {
-  background-color: var(--cor-transparent-white);
+  background-color: var(--cor-transparent-black);
   color: var(--cor-font-4);
 
   border: 2px solid var(--cor-font-4);
@@ -325,7 +325,7 @@ main > span > a::before {
   }
 }
 #sobreText > h1 {
-  background-color: var(--cor-transparent-white);
+  background-color: var(--cor-transparent-black);
   border: 0.2rem solid var(--cor-transparent-white);
 
   text-align: center;
