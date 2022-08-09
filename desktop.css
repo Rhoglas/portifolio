@@ -48,7 +48,7 @@
 } */
 
 body {
-  background: linear-gradient(to right, #ffaa00, #383232);
+  background: linear-gradient(to right, #FFA837, #C10000);
 }
 
 body::-webkit-scrollbar {
@@ -88,7 +88,7 @@ p {
   display: none;
 }
 #header {
-  background-color: var(--cor-transparent-black);
+  background-color: var(--cor-transparent-white);
 
   display: flex;
   position: fixed;
@@ -325,9 +325,7 @@ main > span > a::before {
   }
 }
 #sobreText > h1 {
-  /* background: linear-gradient(to right, #000000, #ffaa00); */
-
-  background-color: var(--cor-transparent-black);
+  background-color: var(--cor-transparent-white);
   border: 0.2rem solid var(--cor-transparent-white);
 
   text-align: center;
@@ -335,7 +333,6 @@ main > span > a::before {
   border-radius: 0.3rem;
 }
 .digitando > h1 {
-  /* font-size: 3rem; */
   padding: 0.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
@@ -344,7 +341,6 @@ main > span > a::before {
 }
 .digitando > h1 > span.typed-text {
   color: var(--cor-font-1);
-  /* font-weight: normal; */
 }
 .digitando > h1 > span.cursor {
   display: inline-block;
