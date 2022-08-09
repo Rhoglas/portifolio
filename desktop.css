@@ -23,29 +23,6 @@
   --cor-transparent-white: #ffffff3b;
   --cor-transparent-black: #0000004f;
 }
-/* body {
-  background-color: #ffaa00;
-  background: radial-gradient(
-      circle,
-      transparent 20%,
-      #ffaa00 20%,
-      #ffaa00 80%,
-      transparent 80%,
-      transparent
-    ),
-    radial-gradient(
-        circle,
-        transparent 20%,
-        #ffaa00 20%,
-        #ffaa00 80%,
-        transparent 80%,
-        transparent
-      )
-      25px 25px,
-    linear-gradient(#000000 2px, transparent 2px) 0 -1px,
-    linear-gradient(90deg, #000000 2px, #ffaa00 2px) -1px 0;
-  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
-} */
 
 body {
   background: linear-gradient(to right, #FFA837, #C10000);
@@ -326,7 +303,7 @@ main > span > a::before {
 }
 #sobreText > h1 {
   background-color: var(--cor-transparent-black);
-  border: 0.2rem solid var(--cor-transparent-white);
+  border: 0.2rem solid var(--cor-font-4);
 
   text-align: center;
   padding: 1rem 0;
