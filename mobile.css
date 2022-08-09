@@ -47,7 +47,7 @@
     overflow-y: auto;
   }
   #menu {
-    background: var(--cor-transparent-white);
+    background: var(--cor-transparent-black);
     position: absolute;
 
     width: 60%;
