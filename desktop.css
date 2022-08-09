@@ -203,7 +203,7 @@ main > span > a::before {
 
 /* ::::::::::::::::::: Section SOBRE ::::::::::::::::::: */
 #sobre {
-  /* background-image: url(./img/bg/bg4.svg); */
+  background-image: url(./img/bg/bg0.svg);
   min-height: 100vh;
   height: 100vh;
 }
